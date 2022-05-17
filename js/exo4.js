@@ -8,3 +8,22 @@
  * https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Date
  */
 
+let displayDate = document.getElementById('container');
+
+let now = new Date();
+console.log(now);
+let hours = (now.getHours());
+let minutes = (now.getMinutes());
+let seconds = (now.getSeconds());
+
+let newElement = document.querySelector('section');
+
+let newTime = '<section id="test"><div id="container">' + hours + ":" + minutes + ":" + seconds + '</div></section>';
+console.log(newTime);
+newElement.insertAdjacentHTML('beforeend', newTime);
+
+function transform(number) {
+    if (number < 10) { number = "0" + number; }
+    return number;
+}
+console.log(transform(number));

@@ -10,4 +10,4 @@ let nombre1 = parseInt(window.prompt('veuillez entrez un premier nombre :'));
 let nombre2 = parseInt(window.prompt('veuillez entrez un deuxième nombre :'));
 let result = nombre1 + nombre2;
 let resultElement = document.getElementById("result");
-resultElement.textContent = resultElement.textContent + result;
+resultElement = resultElement.textContent + result;

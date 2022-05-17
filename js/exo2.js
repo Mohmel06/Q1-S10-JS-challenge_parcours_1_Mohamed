@@ -4,12 +4,18 @@
  * 2. À la soumission du formulaire, on additionne les deux nombres,
  * 3. On affiche le résultat dans #result.
  */
+let formElement = document.querySelector('#container');
+console.log(formElement);
 
-let numberInput1 = document.getElementById('input1');
-console.log(numberInput1);
-let numberInput2 = document.getElementById('input2');
-let result = numberInput1 + numberInput2;
-let buttonElement = document.getElementById('result');
-buttonElement.addEventListener('click', buttonElement);
-buttonElement.textContent = +result;
-console.log(buttonElement);
+formElement.addEventListener('submit', displayResult);
+
+function displayResult(event) {
+    event.preventDefault();
+    let numberInput1 = document.getElementById('input1').value;
+    console.log(numberInput1);
+    let numberInput2 = document.getElementById('input2').value;
+    let result = parseInt(numberInput1) + parseInt(numberInput2);
+    let resultElement = document.querySelector('#result');
+    resultElement.textContent = result;
+    console.log(result);
+}

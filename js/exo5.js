@@ -5,10 +5,12 @@
  */
 //sans commentaires...
 
-function doubleInt(int) {
-    
+function doubleInt() {
+    let intNum = 8;
+    result = (intNum) * 2;
+    return result;
 }
-
+console.log(doubleInt());
 
 
 
