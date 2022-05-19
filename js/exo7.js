@@ -11,11 +11,12 @@
  */
 
 function getExtension(str) {
-
+    return str.split(".").pop();
 }
 
 let str = "hghiuhgkj.jhdgfh"
 getExtension(str);
+console.log(getExtension(str));
 
 
 

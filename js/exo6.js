@@ -6,7 +6,11 @@
 //sans commentaires...
 
 function isEven(int) {
-
+    if (int % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 
@@ -17,4 +21,4 @@ function isEven(int) {
 
 
 // Stop ! Tests, on ne touche pas :P
-check.exo6(isEven);
+//check.exo6(isEven);

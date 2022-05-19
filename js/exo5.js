@@ -5,19 +5,15 @@
  */
 //sans commentaires...
 
-function doubleInt() {
-    let intNum = 8;
-    result = (intNum) * 2;
-    return result;
+
+function doubleInt(int) {
+    int = int * 2;
+    return int;
 }
-console.log(doubleInt());
-
-
-
 
 
 
 
 // Stop ! Tests, on ne touche pas :P
 
-check.exo5(doubleInt);
+//check.exo5(doubleInt);

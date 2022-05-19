@@ -8,3 +8,23 @@
  */
 
 
+let formElement = document.querySelector('#container');
+//console.log(formElement);
+formElement.addEventListener('input', formResult);
+
+
+function formResult(event) {
+    event.preventDefault();
+    let numb1 = document.getElementById('input1').value;
+    let numb2 = document.getElementById('input2').value;
+
+    //if ((!empty(numb1)) && (!empty(numb2))) {
+    let result = parseInt(numb1) + parseInt(numb2);
+    let resultElement = document.querySelector('#result');
+    resultElement.textContent = result;
+
+    return result;
+    // } else {
+    // return "Champ obligatoire";
+    // }
+}
